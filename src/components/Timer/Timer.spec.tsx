@@ -4,7 +4,12 @@ import Timer from './Timer';
 
 describe('Timer component renders', () => {
   let container = shallow(<Timer />);
+
   it('should render a div', () => {
     expect(container.find('div').length).toBeGreaterThanOrEqual(1);
+  });
+
+  it('should render instances of TimerButton component', () => {
+    expect(container.find('TimerButton').length).toEqual(3);
   });
 });
