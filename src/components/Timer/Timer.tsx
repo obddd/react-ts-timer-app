@@ -8,7 +8,7 @@ class Timer extends Component {
     this.state = {
       minutes: 25,
       seconds: 0,
-      isOn: false,
+      isOn: false
     };
   }
   startTimer() {
@@ -28,9 +28,9 @@ class Timer extends Component {
       <div className="timer-container">
         <div className="time-display"></div>
         <div className="timer-button-container">
-          <TimerButton buttonAction={this.startTimer} buttonValue={'Start'} />
-          <TimerButton buttonAction={this.stopTimer} buttonValue={'Stop'} />
-          <TimerButton buttonAction={this.resetTimer} buttonValue={'Reset'} />
+          <TimerButton className='start-timer' buttonAction={this.startTimer} buttonValue={'Start'} />
+          <TimerButton className='stop-timer' buttonAction={this.stopTimer} buttonValue={'Stop'} />
+          <TimerButton className='reset-timer' buttonAction={this.resetTimer} buttonValue={'Reset'} />
         </div>
       </div>
     );
