@@ -4,7 +4,7 @@ import './TimerButton.css';
 
 const TimerButton: any = ({
   buttonAction,
-  buttonValue
+  buttonValue,
 }: InferProps<typeof TimerButton.propTypes>) => {
   return (
     <div className="button-container" onClick={() => buttonAction()}>
@@ -15,7 +15,7 @@ const TimerButton: any = ({
 
 TimerButton.propTypes = {
   buttonAction: PropTypes.func.isRequired,
-  buttonValue: PropTypes.string.isRequired
+  buttonValue: PropTypes.string.isRequired,
 };
 
 export default TimerButton;
